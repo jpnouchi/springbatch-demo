@@ -23,7 +23,8 @@
 hs_err_pid*
 
 *.svn
-target
+.svn/
+target/
 .classpath
 .project
 .settings
