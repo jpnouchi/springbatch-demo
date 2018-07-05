@@ -23,7 +23,7 @@ public class BatchConfiguration {
         reader.setResource(new ClassPathResource("tt-usuario.csv"));
         reader.setLineMapper(new DefaultLineMapper<Usuario>() {{
             setLineTokenizer(new DelimitedLineTokenizer() {{
-                setNames(new String[] {"", "", "", "", "", "", ""});
+                setNames(new String[] {"chrCodigoUsuario","vchNombreUsuario","chrTipoDocIdentidad","chrDocumento","vchResponsable","vchTelefono","vchFax","vchDireccion","vchEMail","vchDepartamento","vchProvincia","vchDistrito","vchFrecuenciaUso","intVolumenPromedio"});
             }});
             setFieldSetMapper(new BeanWrapperFieldSetMapper<Usuario>() {{
                 setTargetType(Usuario.class);
